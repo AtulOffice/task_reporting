@@ -9,7 +9,7 @@ dotenv.config();
 
 const port = process.env.PORT || 9000;
 const app = express();
-setupCronJobs();
+// setupCronJobs();
 app.use(cors());
 app.use(express.json());
 
