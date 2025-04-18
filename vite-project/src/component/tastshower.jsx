@@ -105,7 +105,7 @@ const TaskDisplay = () => {
         <div className="mb-8 flex justify-between items-center">
           <div className="w-28"></div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-            Task Dashboard
+            ADMIN
           </h1>
           <button
             onClick={() => {
