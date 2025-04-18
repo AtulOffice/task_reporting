@@ -10,7 +10,14 @@ dotenv.config();
 const port = process.env.PORT || 9000;
 const app = express();
 // setupCronJobs();
-app.use(cors());
+
+const corsOptions = {
+  origin: process.env.FRONT_PORT, 
+  methods: ["GET", "POST","PUT","DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.get("/", (req, res) => {
